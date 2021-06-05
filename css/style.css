@@ -229,6 +229,10 @@ body{
     align-items: center;
 }
 
+.subscribe-icon{
+    display: flex;
+    align-items: center;
+}
 .light-logo{
     margin-left: 172px;
     width: 40px;
@@ -259,6 +263,7 @@ body{
     width: 64px;
     background: #FFE180;
     padding: 20px 24px;
+    margin-left: 252px;
 }
 
 .footer{
