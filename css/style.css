@@ -76,10 +76,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.sites{
-    display: flex;
-    align-items: center;
-}
+
 
 .site-list{
     display: flex;
@@ -130,15 +127,9 @@ body{
 
 }
 
-.active a{
+.active a, .dessert-type a:hover{
     background: #EAF0ED;
 }
-
-.dessert-type a:hover{
-    background: #EAF0ED;
-}
-
-
 
 .item-list{
     display: flex;
