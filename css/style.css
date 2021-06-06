@@ -47,8 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
 
-*, *:after, *::before {
+
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
@@ -56,18 +61,20 @@ body{
     font-family:Times, Helvetica, sans-serif;
 }
 
-
 .wrap-white{
-    /* width: 940px; */
+    display: flex;
+    justify-content: center;    
+}
+
+.wrap-container{
+    width: 940px;
     margin-top: 30px;
-    margin-left: 42px;
     text-align: center;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    padding-right: 42px;
 }
 .sites{
     display: flex;
@@ -78,9 +85,12 @@ body{
     display: flex;
     align-items: center;
 }
-.logo img{
-    height: 40px;
+
+.logo a{
+    display: block;
+    width: 215.1px;
 }
+
 
 .home a, .dessert a, .login a{
     display: block;
@@ -92,10 +102,6 @@ body{
 
 .home a:hover, .dessert a:hover, .login a:hover{
     border-bottom: 1px solid #3F5D45;
-}
-
-.banner-img{
-    height: 496px;
 }
 
 .product{
@@ -112,6 +118,7 @@ body{
 }
 
 
+
 .dessert-type a{
     display: block;
     line-height: 65px;
@@ -121,6 +128,10 @@ body{
     border: 1px solid #EAF0ED;
     border-top: 1px solid #FFF;
 
+}
+
+.active a{
+    background: #EAF0ED;
 }
 
 .dessert-type a:hover{
@@ -199,12 +210,22 @@ body{
     justify-content: flex-end;
     align-items: center;
     margin-top: 10px;
-    margin-right: 42px;
 }
 
 .page a{
     text-decoration: none;
     color: #3F5D45;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.page1 a{
+    text-decoration: none;
+    color: #FFF;
+    background: #3F5D45;
     display: block;
     width: 60px;
     height: 60px;
@@ -239,25 +260,29 @@ body{
 }
 
 .subscribe{
-    display: flex;
     background: #3F5D45;
-    height: 116px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-container{
+    display: flex;
+    width: 1024px;   
+    padding: 30px 122px;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .subscribe-icon{
     display: flex;
     align-items: center;
 }
 .light-logo{
-    margin-left: 172px;
     width: 40px;
-    height: 40px;
 }
 
 .subscribe span{
-    width: 256px;
     margin-left: 20px;
     color: #FFF;
     line-height: 33px;
@@ -269,24 +294,33 @@ body{
     width: 380px;
     display: flex;
     justify-content: space-between;
-    margin-right: 172px;
 }
 
 .mail-icon{
     width: 64px;
     padding: 16px 20px;
 }
-.foward-icon{
+
+.foward{
+    display: block;
     width: 64px;
+}
+
+.foward-icon{
     background: #FFE180;
     padding: 20px 24px;
-    margin-left: 252px;
 }
 
 .footer{
+    background: #EAF0ED;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
     display: flex;
     justify-content: space-between;
-    background: #EAF0ED;
+    width: 1024px;
 }
 
 .footer-left{
