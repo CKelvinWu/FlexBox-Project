@@ -57,6 +57,11 @@ img{
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: #3F5D45;
+}
+
 body{
     font-family:Times, Helvetica, sans-serif;
 }
@@ -93,8 +98,6 @@ body{
     display: block;
     line-height: 22px;
     display: block;
-    text-decoration: none;
-    color: #3F5D45;
 }
 
 .home a:hover, .dessert a:hover, .login a:hover{
@@ -115,15 +118,11 @@ body{
 }
 
 
-
 .dessert-type a{
     display: block;
-    line-height: 65px;
-    text-decoration: none;
-    color: #3F5D45;
     background: #FFF;
     border: 1px solid #EAF0ED;
-    border-top: 1px solid #FFF;
+    margin-bottom: -1px;
 
 }
 
@@ -187,8 +186,6 @@ body{
     border-top: 1px solid #FFFFFF;    
 }
 .add-cart{
-    text-decoration: none;
-    color: #3F5D45;
     display: block;
     text-align: center;
     background: #EAF0ED;
@@ -203,9 +200,9 @@ body{
     margin-top: 10px;
 }
 
+
+
 .page a{
-    text-decoration: none;
-    color: #3F5D45;
     display: block;
     width: 60px;
     height: 60px;
@@ -213,8 +210,7 @@ body{
     text-align: center;
 }
 
-.page1 a{
-    text-decoration: none;
+.page-active a{
     color: #FFF;
     background: #3F5D45;
     display: block;
@@ -280,7 +276,6 @@ body{
 }
 
 .email{
-    height: 56px;
     background: #FFF;
     width: 380px;
     display: flex;
@@ -288,16 +283,29 @@ body{
 }
 
 .mail-icon{
+    background: #EAF0ED;
     width: 64px;
     padding: 16px 20px;
 }
 
-.foward{
-    display: block;
-    width: 64px;
+.mail-input{
+    background: #EAF0ED;
+    width: 252px;
+    border: 0 none;
+    outline: none;
+    font-size: 24px;
+}
+
+.btn{
+    background: #FFE180;
+    border: 0 none;
+    padding: 0;
+    cursor:pointer;
 }
 
 .foward-icon{
+    display: block;
+    width: 64px;
     background: #FFE180;
     padding: 20px 24px;
 }
@@ -312,31 +320,28 @@ body{
     display: flex;
     justify-content: space-between;
     width: 1024px;
+    padding-left: 172px;
+    padding-right: 121.72px;
 }
 
-.footer-left{
-    margin-left: 172px;
-}
 
 .footer-logo img{
     margin-top: 38.9px;
+    margin-bottom: 115.5px;
     width: 171.22px;
 }
 
-.footer-left p{
-    margin-top: 115.5px;
-    line-height: 24px;
-}
 
-.footer-left p a{
-    text-decoration: none;
+.info p a, .info p{
     line-height: 24px;
     color: #3F5D45;
 }
 
-.footer-left p a:hover{
+.info p a:hover{
     color: darkseagreen;
 }
+
+
 .info img{
     width: 32px;
     margin-right: 8px;
@@ -344,12 +349,11 @@ body{
     margin-bottom: 30px;
 }
 
-.footer-right{
+.footer-slogan{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 30px;
-    margin-right: 121.72px;
 }
 
 .slogan{
