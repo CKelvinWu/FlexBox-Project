@@ -67,13 +67,14 @@ body{
 }
 
 .wrap-white{
+    padding-top: 20px;
     display: flex;
     justify-content: center;    
 }
 
 .wrap-container{
     width: 940px;
-    margin-top: 30px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -86,7 +87,14 @@ body{
 .site-list{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
+
+.site-list li{    
+    width: 60px;
+    text-align: center;
+}
+
 
 .logo a{
     display: block;
@@ -97,18 +105,22 @@ body{
 .home a, .dessert a, .login a{
     display: block;
     line-height: 22px;
+}
+
+.cart a{
     display: block;
 }
 
-.home a:hover, .dessert a:hover, .login a:hover{
+.home a:hover, .dessert a:hover, .login a:hover, .cart a:hover{
     border-bottom: 1px solid #3F5D45;
 }
+
 
 .product{
     display: flex;
 }
 
-.dessert-type{
+.dessert-list{
     width: 300px;
     background: #3F5D45;
     color: #FFF;
@@ -123,7 +135,9 @@ body{
     background: #FFF;
     border: 1px solid #EAF0ED;
     margin-bottom: -1px;
-
+    font-size: 24px;
+    line-height: 65px;
+    text-align: center;
 }
 
 .active a, .dessert-type a:hover{
@@ -157,6 +171,7 @@ body{
     top: 19px;
     right: 22px;
 }
+
 
 .price{
     display: flex;
@@ -199,9 +214,6 @@ body{
     align-items: center;
     margin-top: 10px;
 }
-
-
-
 .page a{
     display: block;
     width: 60px;
@@ -252,7 +264,7 @@ body{
     justify-content: center;
 }
 
-.subscribe-container{
+.subscribe-container{    
     display: flex;
     width: 1024px;   
     padding: 30px 122px;
@@ -270,6 +282,8 @@ body{
 }
 
 .subscribe span{
+    display: inline-block;
+    white-space: nowrap;
     margin-left: 20px;
     color: #FFF;
     line-height: 33px;
@@ -277,36 +291,41 @@ body{
 
 .email{
     background: #FFF;
-    width: 380px;
+    max-width: 380px;
     display: flex;
     justify-content: space-between;
 }
 
 .mail-icon{
     background: #EAF0ED;
-    width: 64px;
+    max-width: 64px;
     padding: 16px 20px;
 }
 
 .mail-input{
+    display: block;
     background: #EAF0ED;
-    width: 252px;
+    max-width: ;
     border: 0 none;
     outline: none;
     font-size: 24px;
 }
 
 .btn{
+    width: 64px;
     background: #FFE180;
     border: 0 none;
     padding: 0;
     cursor:pointer;
 }
 
+.btn:hover{
+    background:#b6c7be;
+}
+
 .foward-icon{
     display: block;
-    width: 64px;
-    background: #FFE180;
+    max-width: 64px;
     padding: 20px 24px;
 }
 
@@ -357,11 +376,6 @@ body{
 }
 
 .slogan{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.slogan h2{
     color: #3F5D45;
     font-size: 24px;
     line-height: 1.5;
